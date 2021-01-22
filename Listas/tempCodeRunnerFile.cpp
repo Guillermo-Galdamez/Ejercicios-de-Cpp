@@ -1,0 +1,1 @@
+aux = aux->next;
