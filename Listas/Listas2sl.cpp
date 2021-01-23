@@ -125,7 +125,6 @@ void actualizarPersona(Lista *lista){
 
 void mostrarLista(Lista *lista){
     Nodo *aux = lista->inicio;
-
     if (empty(lista)){
         cout<<"\n La lista esta vacía\n";
     }
@@ -134,11 +133,9 @@ void mostrarLista(Lista *lista){
         while (aux)
         {
             Persona actual = aux->dato;
-            cout<<actual.carnet<< " - "<<actual.nombre<< " - "<<actual.apellido<< " - ";
+            cout<<actual.carnet<< " - "<<actual.nombre<< " - "<<actual.apellido<< " - "<<endl;
             cout<<actual.edad<< " - "<<actual.telefono<< " - "<<actual.email<< " - "<<endl;
-            aux = aux->next;
         }
-        cout<<endl;
     }
 }
 
