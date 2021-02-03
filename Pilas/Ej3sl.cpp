@@ -5,7 +5,7 @@ struct nodo{
     int elemento;
     struct nodo *next;
 }; 
-typedef struct nodo *stack;
+    typedef struct nodo *stack;
 
 void initialize(stack*s){
     *s= NULL;
