@@ -41,7 +41,7 @@ float pop(pila *s){
 int top(pila *s){
     if(!empty(s)){
         int e = (*s)->dato;
-        return (*s)->dato;
+        return e;
     }
     else{
         cout << "Underflow!" << endl;
